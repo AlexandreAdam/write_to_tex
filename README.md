@@ -20,7 +20,7 @@ write_to_tex(path_to_tex, results)
 ```
 In the tex file, simply define
 ```latex
-        \newcommand{\pyoutput}[2]{#2}
+\newcommand{\pyoutput}[2]{#2}
 ```
 in the preambule. Then, use it like so
 ```latex

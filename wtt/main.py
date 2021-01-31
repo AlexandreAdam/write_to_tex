@@ -31,6 +31,6 @@ def write_to_tex(texfile, results):
         content = file.read()
     for k,v in results.items():
         content = re.sub(r'(pyoutput)(\{%s\})(\{\$*[\\A-Za-z0-9.,\{\}^\s-]+\$*\})' % (k), r'\g<1>\g<2>{%s}' % (v), content) 
-    with open(TEXFILE, "w", encoding='utf-8') as file:
+    with open(texfile, "w", encoding='utf-8') as file:
         file.write(content)
 
