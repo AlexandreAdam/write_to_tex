@@ -10,7 +10,7 @@ def format_tex(n, prec:int=3) -> str:
     return s
 
 
-def write_to_tex(texfile):
+def write_to_tex(texfile, results):
     """
     The user must define a variable (dictionary) and use the command 
     \pyoutput in the tex file, defined in the preamble like this
